@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clonage') {
+            steps {
+                script {
+                    git(branch: 'main', credentialsId: 'ssh', url: 'https://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@github.com/your/repo.git')
+                }
+            }
+        }
+    }
+}
+
