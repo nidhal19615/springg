@@ -5,7 +5,7 @@ pipeline {
         stage('Clonage') {
             steps {
                 script {
-                    git(branch: 'main', credentialsId: 'ssh', url: 'https://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@nodejs.git')
+                    git(branch: 'main', credentialsId: 'ssh', url: 'https://ghp_5Uuc6I1nwqdVaFtYyIDY6otLMTd77E1Y@github.com/nidhal19615/springg.git')
                 }
             }
         }
