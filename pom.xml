@@ -66,12 +66,4 @@
         </plugins>
         <plugin>
        </build>
-    <distributionManagement>
-       <repository>
-           <id>deploymentRepo</id>
-           <name>Nexus Repository</name>
-           <url>http://192.168.33.130:8081/repository/maven-public/</url>
-       </repository>
-    </distributionManagement>
-
 </project>
