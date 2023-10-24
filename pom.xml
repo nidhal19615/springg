@@ -64,6 +64,6 @@
             </plugin>
 
         </plugins>
-        <plugin>
-       </build>
+    </build>
+
 </project>
