@@ -7,6 +7,7 @@ pipeline {
         SONARQUBE_PASSWORD = 'azerty'
         NEXUS_USERNAME = 'admin'
         NEXUS_PASSWORD = 'azerty'
+	NEXUS_URL="http://192.168.33.130:8081/repository/maven-public/"
     }
 
     stages {
@@ -41,7 +42,7 @@ pipeline {
          stage('Maven Deploy to Nexus') {
             steps {
                 script {
-                     sh 'mvn deploy -Dmaven.test.skip=true -DaltDeploymentRepository=nexus::default::http://192.168.33.130:8081/repository/maven-public/ -Dusername=${NEXUS_USERNAME} -Dpassword=${NEXUS_PASSWORD}'
+                        sh 'mvn deploy'
                 }
             }
         }
